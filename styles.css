@@ -1,0 +1,77 @@
+@font-face { font-family: 'sans'; src: url('sans.ttf') format('truetype');}
+
+body {
+	color: #FFF;
+	background-color: #161616;
+	font-family: 'sans';
+	margin: 0em;
+	padding: 0em;
+}
+
+ul, ol {
+	list-style: none;
+}
+
+.box1, .box2, .box3 {
+	display: grid;
+}
+
+
+
+.box2 {
+	margin-top: 1rem;
+}
+
+.item1A {
+	grid-column: 1;
+	grid-row: 1;
+	display: flex;
+	align-items: center;
+	padding: 5rem;
+}
+
+.item1B {
+	grid-column: 2;
+	grid-row: 1;
+}
+
+.item2A {
+	grid-column: 1;
+}
+
+.item2B {
+	grid-column: 2;
+}
+
+.item2C {
+	grid-column: 3;
+}
+
+.item3A {
+	grid-column: 1;
+	grid-row: 1;
+}
+
+.item3B {
+	grid-column: 2;
+	grid-row: 1;
+}
+
+.item3C {
+	grid-column: 3;
+	grid-row: 1;
+}
+
+.box2, .box3 {
+	grid-template-columns: repeat(3, 1fr);
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        font-size: 14px;
+    }
+
+    .container {
+        width: 90%;
+    }
+}
